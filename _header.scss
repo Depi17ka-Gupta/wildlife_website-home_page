@@ -1,0 +1,61 @@
+ @import "variable";
+ .top-bar-section {
+     background-color: $bg-color;
+     & .top-bar {
+         & .dropdown-icons {
+             & .top-bar-icons {
+                 & a {
+                     & i {
+                         width: 37px;
+                         height: 37px;
+                         color: #6aaf08;
+                         background-color: #fff;
+                         border-radius: 50%;
+                         text-align: center;
+                         /* padding: 11px; */
+                         padding-top: 11px;
+                         padding-right: 1px;
+                         font-size: 15px;
+                     }
+                     &:hover i {
+                         color: #fff;
+                         background-color: $bg-color;
+                     }
+                 }
+             }
+         }
+     }
+ }
+ 
+ .navbar-section {
+     & .navbar {
+         & .navbar-nav {
+             & .nav-item {
+                 font-size: 18px;
+             }
+         }
+         & .navbar-search {
+             & .btn {
+                 background-color: $bg-color;
+                 border-radius: 10px;
+                 font-size: 16px;
+                 & i {
+                     padding: 11px;
+                     border-radius: 10px;
+                 }
+             }
+             &:hover .btn {
+                 background-color: #fff;
+                 color: #000000 !important;
+             }
+             &:hover .btn i {
+                 background-color: $bg-color !important;
+             }
+         }
+         & .navbar-brand {
+             & .logo-wildlife {
+                 width: 190px;
+             }
+         }
+     }
+ }

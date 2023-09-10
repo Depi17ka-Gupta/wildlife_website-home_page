@@ -1,0 +1,1270 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Catamaran&family=Lato:ital,wght@1,700&family=Roboto:ital,wght@0,400;1,300&display=swap');
+@import "variable";
+@import "header";
+@import "footer";
+@import "index";
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+// @mixin buttons {
+//     height: 30px;
+//     width: 30px;
+//     text-align: center;
+//     padding: 6px;
+// }
+.slider-section {
+    & .owl-nav {
+        display: none;
+    }
+    & .lion-tiger {
+        & .lion_img {
+            filter: brightness(0.5);
+            & .img-lion {
+                height: 700px !important;
+                width: 100% !important;
+            }
+        }
+    }
+    & .wildlife {
+        left: 7%;
+        & .wildlife-heading {
+            color: $bg-color;
+        }
+        & .experience {
+            font-size: 65px;
+        }
+        & .wild-para {
+            font-size: 19px;
+        }
+        & .about-more {
+            gap: 3rem;
+            margin-top: 30px;
+            padding: 20px;
+            & .btn {
+                background-color: $bg-color;
+                border-radius: 10px;
+                font-size: 16px;
+                & .fa-arrow-right {
+                    padding: 11px;
+                    border-radius: 10px;
+                }
+                &:hover {
+                    background-color: #000000;
+                    color: $bg-color !important;
+                }
+                &:hover i {
+                    background-color: $bg-color !important;
+                    color: #fff !important;
+                }
+            }
+            & .btn-learnn {
+                color: $bg-color;
+                &:hover {
+                    background-color: #000000 imo !important;
+                }
+                &:hover i {
+                    background-color: $bg-color !important;
+                }
+            }
+        }
+    }
+}
+
+.animal-section {
+    background-color: $bg-section;
+    & .animal-heading {
+        color: $bg-color;
+    }
+    & .animal-awesome {
+        font-size: 50px;
+    }
+    & .animal-box {
+        background-color: $bg-color;
+        border-radius: 10px;
+    }
+}
+
+.about-us {
+    padding: 6rem 0;
+    & .about-image {
+        position: relative;
+        & .aboutus-image::before {
+            content: "";
+            position: absolute;
+            border: 3px solid #6aaf08;
+            left: 138px;
+            right: 126px;
+            top: -30px;
+            bottom: -30px;
+            border-radius: 10px 10px;
+            z-index: -1;
+        }
+    }
+    & .about-content {
+        & .about-heading {
+            color: $bg-color;
+        }
+        & .natural-world {
+            font-size: 50px;
+        }
+        & .about-list {
+            & ul {
+                & li {
+                    & i {
+                        height: 20px;
+                        font-size: 11px;
+                        padding: 4px;
+                        width: 20px;
+                        border: 1px solid $bg-color;
+                        border-radius: 50px;
+                        color: $bg-color;
+                    }
+                }
+            }
+        }
+        & .discover {
+            & .btn {
+                background-color: $bg-color;
+                border-radius: 10px;
+                font-size: 16px;
+                & i {
+                    padding: 11px;
+                    border-radius: 10px;
+                }
+                &:hover {
+                    background-color: #000000;
+                    color: #fff !important;
+                }
+                &:hover i {
+                    background-color: $bg-color !important;
+                }
+            }
+        }
+    }
+}
+
+.features {
+    background-color: $bg-section;
+    & .natural-enviroment {
+        transition: all .5s ease-in-out;
+        &:hover {
+            transform: translateY(-15px);
+        }
+    }
+    & .feature-heading {
+        color: $bg-color;
+    }
+    & .feature-best {
+        font-size: 50px;
+    }
+}
+
+.gallery {
+    & .gallery-section {
+        position: relative;
+        & .gallery-imgae {
+            border-radius: 15px;
+        }
+        & .gallery-tiger {
+            background-color: #69af08db;
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            color: #fff;
+            opacity: 0;
+            transition: .5s ease;
+            &:hover {
+                opacity: 1;
+            }
+            & .gallery-awesome-content {
+                z-index: 1;
+                position: absolute;
+                top: 78%;
+                left: 13%;
+            }
+            & .gallery-awesome-tiger {
+                z-index: 1;
+                position: absolute;
+                top: 83%;
+                left: 13%;
+            }
+            & a {
+                position: absolute;
+                top: 40%;
+                font-size: 30px;
+                background-color: #fff;
+                z-index: 2;
+                color: #6aaf08;
+                width: 70px;
+                left: 45%;
+                height: 70px;
+                border-radius: 50%;
+                text-align: center;
+                padding: 12px;
+            }
+        }
+        & a {
+            position: absolute;
+            top: 50%;
+            font-size: 30px;
+            background-color: #fff;
+            z-index: 2;
+            color: #6aaf08;
+            width: 70px;
+            left: 45%;
+            height: 70px;
+            border-radius: 50%;
+            text-align: center;
+            padding: 12px;
+        }
+    }
+    & .whole-animal {
+        & .total-animal {
+            background-color: $bg-color;
+            border-radius: 20px;
+            & .animal-total-heading {
+                font-size: 50px;
+            }
+            & .total-heading {
+                font-size: 20px;
+            }
+            & .animal1 {
+                background-color: #000;
+                border-radius: 50px;
+                height: 103px;
+                width: 103px;
+                padding: 24px;
+                position: relative;
+            }
+            & .animal1::before {
+                content: "";
+                position: absolute;
+                border: 5px solid #6aaf08;
+                left: -11px;
+                right: -14px;
+                top: -20px;
+                bottom: -30px;
+                border-radius: 34px;
+                z-index: -1;
+            }
+        }
+    }
+    & .gallery-heading {
+        color: $bg-color;
+    }
+    & .gallery-awesome {
+        font-size: 50px;
+    }
+}
+
+.safety-section {
+    background-color: $bg-color;
+    & .safety-information {
+        position: relative;
+        & .safety-video {
+            background-image: url(../img/rat.jpg);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: ripple-wave 1s linear infinite;
+        }
+        & a {
+            position: absolute;
+            top: 45%;
+            right: 44%;
+            & i {
+                background-color: $bg-color;
+                height: 60px;
+                width: 60px;
+                border-radius: 50px;
+                color: #fff;
+                text-align: center;
+                font-size: 20px;
+                padding: 20px;
+                // &::after {
+                //     content: "";
+                //     position: absolute;
+                //     height: 100%;
+                //     width: 100%;
+                //     top: 0;
+                //     left: 0;
+                //     z-index: -1;
+                //     background-color: #6aaf08;
+                //     border-radius: 50px;
+                //     animation: ripple-wave 1s linear infinite;
+                //     -webkit-transform: scale(1);
+                //     transform: scale(1);
+                //     transition: all .5s ease-in-out;
+                // }
+                // @keyframes ripple-wave {
+                //     0% {
+                //         opacity: .8;
+                //         -webkit-transform: scale(.9);
+                //         transform: scale(.9)
+                //     }
+                //     100% {
+                //         opacity: 0;
+                //         -webkit-transform: scale(1.5);
+                //         transform: scale(1.5)
+                //     }
+                // }
+            }
+        }
+    }
+    & .safety-info {
+        & .safety-list {
+            & ul {
+                & li {
+                    color: #fff;
+                    & i {
+                        height: 20px;
+                        font-size: 11px;
+                        padding: 3px;
+                        width: 20px;
+                        border: 3px solid #fff;
+                        border-radius: 50px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        & .safety-awesome {
+            font-size: 50px;
+        }
+    }
+}
+
+.membership {
+    & .member-section {
+        & .family-adults {
+            transition: all .5s ease-in-out;
+            &:hover {
+                transform: translateY(-15px);
+            }
+            & .family-section {
+                & .member-list {
+                    & ul {
+                        & li {
+                            margin: 10px 0;
+                        }
+                    }
+                }
+                & .btn {
+                    background-color: $bg-color;
+                    border-radius: 10px;
+                    font-size: 16px;
+                    & i {
+                        padding: 11px;
+                        border-radius: 10px;
+                    }
+                    &:hover {
+                        background-color: #000000;
+                        color: #fff !important;
+                    }
+                    &:hover i {
+                        background-color: $bg-color !important;
+                    }
+                }
+                & .white-bird {
+                    position: relative;
+                    & img {
+                        border-radius: 20px;
+                    }
+                    & .family-content {
+                        background-color: #69af08a4;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 20px;
+                        top: 0;
+                    }
+                }
+                background-color: $bg-section;
+            }
+        }
+    }
+    & .member-content {
+        & .member-heading {
+            color: $bg-color;
+        }
+        & .member-awesome {
+            font-size: 50px
+        }
+    }
+}
+
+.authority-section {
+    background-color: $bg-section;
+    & .authority-whole {
+        box-shadow: 0 3px 24px rgb(0 0 0 / 5%);
+        background-color: #fff;
+        border-bottom: 3px solid $bg-color;
+        padding: 13px;
+        transition: all .5s ease-in-out;
+        &:hover {
+            transform: translateY(-15px);
+        }
+        & .malissa {
+            position: relative;
+            &:hover .authority-icons {
+                opacity: 1;
+                position: absolute;
+                top: 0;
+                right: 11px;
+            }
+            & .authority-icons {
+                top: 0;
+                right: 11px;
+                opacity: 0;
+                transition: 1s ease;
+                position: absolute;
+                & ul {
+                    & li {
+                        background-color: $bg-color;
+                        & a {
+                            & i {
+                                height: 40px;
+                                width: 40px;
+                                border-radius: 20px;
+                                font-size: 19px;
+                                text-align: center;
+                                padding: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .authority-specialist {
+            color: $bg-color;
+        }
+        & img {
+            border-radius: 18px;
+        }
+    }
+    & .Authority-content {
+        & .Authority-heading {
+            color: $bg-color;
+        }
+        & .Authority-awesome {
+            font-size: 50px;
+        }
+    }
+}
+
+.question-section {
+    & .accordion {
+        & .accordion-item {
+            box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
+            border: none;
+            & .accordion-header {
+                & .accordion-button {
+                    font-size: 20px;
+                    font-weight: bold;
+                    & span {
+                        & i {
+                            height: 50px;
+                            width: 50px;
+                            border-radius: 10px;
+                            text-align: center;
+                            padding: 15px;
+                            background-color: $bg-color;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .ques-content {
+        & .ques-heading {
+            color: $bg-color;
+        }
+        & .ques-general {
+            font-size: 50px;
+        }
+        & .btn {
+            background-color: $bg-color;
+            border-radius: 10px;
+            font-size: 16px;
+            & i {
+                padding: 11px;
+                border-radius: 10px;
+            }
+            &:hover {
+                background-color: #000000;
+                color: #fff !important;
+            }
+            &:hover i {
+                background-color: $bg-color !important;
+            }
+        }
+    }
+}
+
+.events {
+    background-color: $bg-section;
+    & .events-description {
+        & .timimg {
+            & .wildlife-zoo {
+                box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
+                background-color: #fff;
+                border-radius: 15px;
+                transition: all .5s ease-out;
+                &:hover {
+                    transform: translateY(-15px);
+                }
+                & .wildlife-history {
+                    & .history-heading {
+                        font-size: 22px;
+                        &:hover {
+                            color: $bg-color;
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+                    & .zoo {
+                        & a {
+                            & i {
+                                color: $bg-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .events-content {
+        & .events-heading {
+            color: $bg-color;
+        }
+        & .events-upcoming {
+            font-size: 50px;
+        }
+    }
+}
+
+.exibition {
+    & .exibit {
+        & .exibition-bird {
+            border-radius: 20px;
+            width: 100%;
+        }
+    }
+    & .exibition-content {
+        & .exibition-heading {
+            color: $bg-color;
+        }
+        & .exibition-zoo {
+            font-size: 50px;
+        }
+        & .exibition-timing {
+            &::before {
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 75%;
+                border: 1px solid #6aaf08;
+                display: inline-block;
+                margin: 25px 0 0 14px;
+            }
+            & .start1::before {
+                position: absolute;
+                content: "\f111";
+                margin: -2px 0 0 -42px;
+                border-radius: 50%;
+                font-family: fontAwesome;
+                color: #6aaf08;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.visitors {
+    background: Linear-gradient(rgb(0 0 0 / 88%), rgb(32 24 24 / 88%)), url(../img/yellow-bird.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    background-size: cover;
+    height: 800px;
+    & .visitors-content {
+        & .visitors-heading {
+            color: $bg-color;
+        }
+        & .visitors-say {
+            font-size: 50px;
+        }
+    }
+    & .visitor-says {
+        & .testimonials {
+            background-color: $bg-color;
+            border-radius: 33px;
+            & img {
+                border: 2px dashed #fff;
+                padding: 7px;
+                border-radius: 50px;
+            }
+            & .visitor-para {
+                word-break: break-all;
+            }
+        }
+    }
+}
+
+.blog {
+    background-color: $bg-section;
+    & .blog-content {
+        & .blog-heading {
+            color: $bg-color;
+        }
+        & .blog-news {
+            font-size: 50px;
+        }
+    }
+    & .blog-animals {
+        & .blog-whole {
+            box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
+            transition: all .5s ease-in-out;
+            &:hover {
+                transform: translateY(-15px);
+            }
+            & .btn {
+                background-color: $bg-color;
+            }
+            & .blog-timing {
+                & a {
+                    color: black;
+                    & i {
+                        color: $bg-color;
+                    }
+                }
+            }
+            & .blog-para {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+.Subscribe {
+    background-color: $bg-color;
+    position: relative;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 15%;
+        font-size: 8rem;
+        font-family: fontAwesome;
+        top: 14%;
+        left: 26%;
+        color: #bad69452;
+        z-index: -1;
+        transform: rotate(45deg);
+    }
+    & .subscribe-mail {
+        & a {
+            background-color: $bg-color;
+            position: absolute;
+            top: 22px;
+            right: 19px;
+            font-size: 19px;
+            padding: 11px;
+        }
+    }
+}
+
+.wildlife-list {
+    & .time-list {
+        font-size: 22px;
+        & .wildlife-quick {
+            font-size: 22px;
+            position: relative;
+            &::after {
+                content: "";
+                border-bottom: 2px solid $bg-color;
+                width: 20px;
+                position: absolute;
+                bottom: 20%;
+                left: 0;
+            }
+            &::before {
+                content: "";
+                border-bottom: 2px solid $bg-color;
+                width: 40px;
+                position: absolute;
+                bottom: 20%;
+                left: 34px;
+            }
+        }
+        & ul {
+            & li {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                padding: 6px 0;
+                font-size: 16px;
+                i {
+                    color: $bg-color;
+                }
+                & span {
+                    float: right;
+                }
+            }
+        }
+    }
+    & .wildlife-address {
+        & .address-lists {
+            & ul {
+                & li {
+                    margin-top: 10px;
+                    & a {
+                        color: #fff;
+                        & i {
+                            background-color: #6aaf08;
+                            color: #fff;
+                            height: 35px;
+                            width: 35px;
+                            text-align: center;
+                            padding: 8px;
+                            border-radius: 9px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .about-list {
+        & ul {
+            gap: 1rem;
+            display: flex;
+            flex-direction: column;
+            & li {
+                transition: all 1s ease;
+                & a {
+                    color: #fff;
+                    transition: all 1s ease;
+                    &:hover {
+                        padding-left: 10px;
+                        color: $bg-color;
+                    }
+                    & i {
+                        font-size: 12px;
+                        color: $bg-color;
+                    }
+                }
+            }
+        }
+        & .wildlife-quick {
+            font-size: 22px;
+            position: relative;
+            &::after {
+                content: "";
+                border-bottom: 2px solid $bg-color;
+                width: 20px;
+                position: absolute;
+                bottom: 20%;
+                left: 0;
+            }
+            &::before {
+                content: "";
+                border-bottom: 2px solid $bg-color;
+                width: 40px;
+                position: absolute;
+                bottom: 20%;
+                left: 34px;
+            }
+        }
+    }
+}
+
+.copyright-section {
+    background-color: black;
+    & .copyright-content {
+        & a {
+            color: $bg-color;
+        }
+    }
+    & .copyright-icons {
+        & a {
+            & i {
+                width: 40px;
+                height: 40px;
+                color: #fff;
+                background: #333334;
+                border-radius: 50%;
+                text-align: center;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@mixin wild_res_section-mixin-max-sm() {
+    .top-bar-section {
+        display: none;
+    }
+    .header-section {
+        & .navbar {
+            & .navbar-brand {
+                & .logo-wildlife {
+                    width: 100px;
+                }
+            }
+            & .btn {
+                display: none;
+            }
+            & .navbar-toggler {
+                color: #fff;
+                background-color: #fff;
+                padding: 4px;
+                & span {
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+    .slider-section {
+        & .lion-tiger {
+            & .lion_img {
+                & .img-lion {
+                    object-fit: cover;
+                }
+            }
+        }
+        & .wildlife {
+            top: 11%;
+            left: 0%;
+            & .wildlife-heading {
+                font-size: 15px !important;
+            }
+            & .experience {
+                font-size: 32px;
+            }
+            & .wild-para {
+                font-size: 15px;
+            }
+        }
+    }
+    .animal-section {
+        & .animal-awesome {
+            font-size: 30px;
+        }
+    }
+    .about-us {
+        & .about-image {
+            & .aboutus-image {
+                &::before {
+                    left: 77px;
+                    right: 77px;
+                }
+            }
+        }
+        & .about-content {
+            & .about-heading {
+                text-align: center;
+            }
+            margin-top: 55px;
+            & .natural-world {
+                font-size: 30px;
+                text-align: center;
+            }
+            & .about-us-para {
+                word-break: break-all;
+            }
+            & .about-list {
+                & ul {
+                    & li {
+                        & i {
+                            margin-right: 6px !important;
+                        }
+                    }
+                }
+            }
+            & .discover {
+                text-align: center;
+            }
+        }
+    }
+    .features {
+        & .feature-best {
+            font-size: 30px;
+        }
+        & .natural-enviroment {
+            margin-top: 50px;
+        }
+        & .features-section {
+            padding-top: 0 !important;
+        }
+    }
+    .gallery {
+        & .gallery-awesome {
+            font-size: 30px;
+        }
+        & .whole-animal {
+            margin-top: 34px;
+        }
+    }
+    .membership {
+        & .member-content {
+            & .member-awesome {
+                font-size: 30px;
+            }
+        }
+    }
+    .authority-section {
+        & .Authority-content {
+            & .Authority-awesome {
+                font-size: 30px;
+            }
+        }
+    }
+    .question-section {
+        & .ques-content {
+            padding-right: 0 !important;
+            & .ques-heading {
+                text-align: center;
+            }
+            & .ques-general {
+                font-size: 30px;
+                text-align: center;
+            }
+            & .ques-para {
+                text-align: center;
+            }
+            & .ques-botton {
+                text-align: center;
+            }
+        }
+        & .accordion {
+            & .accordion-item {
+                & .accordion-header {
+                    & .accordion-button {
+                        font-size: 14px;
+                        & span {
+                            margin-right: 5px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .events {
+        & .events-content {
+            & .events-upcoming {
+                font-size: 30px;
+            }
+        }
+        & .events-description {
+            & .timimg {
+                & .wildlife-zoo {
+                    & .wildlife-history {
+                        padding-top: 20px;
+                        & .history-heading {
+                            font-size: 18px;
+                        }
+                        & .zoo {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .exibition {
+        & .exibition-content {
+            & .exibition-zoo {
+                font-size: 30px;
+            }
+        }
+    }
+    .visitors {
+        & .visitors-content {
+            & .visitors-say {
+                font-size: 30px;
+            }
+        }
+    }
+    .safety-section {
+        & .safety-info {
+            padding-left: 0 !important;
+            & .safety-awesome {
+                font-size: 30px;
+            }
+        }
+    }
+    .blog {
+        & .blog-content {
+            & .blog-news {
+                font-size: 30px;
+            }
+        }
+        & .blog-animals {
+            & .blog-whole {
+                & .blog-para {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    .Subscribe {
+        & .subscribe-mail {
+            & a {
+                font-size: 12px;
+                top: 28px;
+            }
+        }
+    }
+    .copyright-section {
+        & .copyright-content {
+            text-align: center;
+        }
+        & .copyright-icons {
+            justify-content: center !important;
+            padding-top: 20px;
+        }
+    }
+}
+
+@mixin wild_res_section-mixin-max-md() {
+    .top-bar-section {
+        display: none;
+    }
+    .header-section {
+        & .navbar {
+            & .navbar-brand {
+                & .logo-wildlife {
+                    width: 141px;
+                }
+            }
+            & .btn {
+                display: none;
+            }
+            & .navbar-toggler {
+                color: #fff;
+                background-color: #fff;
+                padding: 4px;
+                & span {
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+    .slider-section {
+        & .wildlife {
+            top: 16%;
+            left: 4%;
+            & .wildlife-heading {
+                font-size: 35px !important;
+            }
+            & .experience {
+                font-size: 35px;
+            }
+            & .wild-para {
+                font-size: 18px;
+            }
+        }
+    }
+    .about-us {
+        & .about-image {
+            & .aboutus-image {
+                &::before {
+                    left: 140px;
+                    right: 140px;
+                }
+            }
+        }
+        & .about-content {
+            & .natural-world {
+                text-align: center;
+            }
+            & .discover {
+                // text-align: center;
+            }
+            & .about-heading {
+                text-align: center;
+            }
+            margin-top: 55px;
+            & .about-list {
+                & ul {
+                    & li {
+                        & i {
+                            margin-right: 6px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .features {
+        & .natural-enviroment {
+            margin-top: 50px;
+        }
+        & .features-section {
+            padding-top: 0 !important;
+        }
+    }
+    .gallery {
+        & .gallery-section {
+            & .gallery-tiger {
+                & .gallery-awesome-tiger {
+                    top: 77%;
+                    font-size: 20px !important;
+                }
+                & .gallery-awesome-content {
+                    top: 65%;
+                }
+                & a {
+                    top: 29%;
+                    left: 35%;
+                }
+            }
+        }
+        & .whole-animal {
+            margin-top: 40px;
+        }
+    }
+}
+
+@mixin wild_res_section-mixin-max-lg() {
+    .top-bar-section {
+        & .top-bar {
+            & .top-bar-ticket {
+                & .tob-bar-rquired {
+                    font-size: 11px;
+                    font-weight: normal !important;
+                    & a {
+                        font-weight: normal !important;
+                    }
+                }
+            }
+        }
+    }
+    .header-section {
+        & .navbar {
+            & .navbar-brand {
+                & .logo-wildlife {
+                    width: 191px;
+                }
+            }
+            & .btn {
+                display: none;
+            }
+            & .navbar-toggler {
+                color: #fff;
+                background-color: #fff;
+                padding: 4px;
+                & span {
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+    .slider-section {
+        & .wildlife {
+            top: 19%;
+            left: 0;
+            & .wildlife-heading {
+                font-size: 30px !important;
+            }
+            & .experience {
+                font-size: 32px;
+            }
+            & .wild-para {
+                font-size: 18px;
+            }
+        }
+    }
+    .about-us {
+        & .about-image {
+            & .aboutus-image {
+                &::before {
+                    left: 96px;
+                    right: 96px;
+                }
+            }
+        }
+        & .about-content {
+            & .about-list {
+                & ul {
+                    & li {
+                        & i {
+                            margin-right: 6px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin wild_res_section-mixin-max-xl() {
+    .slider-section {
+        & .wildlife {
+            left: 10%;
+        }
+    }
+    .membership {
+        & .member-section {
+            & .family-adults {
+                & .family-section {
+                    & .member-list {
+                        & ul {
+                            padding-left: 20px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin wild_res_section-mixin-min-xxl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    @include wild_res_section-mixin-min-xxl();
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+    @include wild_res_section-mixin-max-xl();
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    @include wild_res_section-mixin-max-lg();
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    @include wild_res_section-mixin-max-md();
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    @include wild_res_section-mixin-max-sm();
+}
